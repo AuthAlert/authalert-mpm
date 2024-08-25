@@ -10,7 +10,7 @@ function AuthAlertAPI(projectId, data) {
     }
     // add device id to data
     data.device_id = device_id;
-    return axios.post(`https://api.authalert.io/projects/${projectId}`, data);
+    return axios.post(`https://api.authalert.io/api/${projectId}`, data);
 }
 
 module.exports = AuthAlertAPI;
