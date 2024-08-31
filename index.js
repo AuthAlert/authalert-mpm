@@ -10,6 +10,7 @@ function AuthAlertAPI(projectId, data) {
     }
     // add device id to data
     data.device_id = device_id;
+    data.timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
     return axios.post(`https://api.authalert.io/api/${projectId}`, data);
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "authalert",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "description": "AuthAlert instantly identifies new devices accessing user accounts and sends alerts via API, email, or webhook to enhance security and build trust.",
   "main": "index.js",
   "homepage": "https://www.authalert.io",

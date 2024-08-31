@@ -100,6 +100,7 @@ The Mailgun integration allows you to enable email alerts without writing code w
 | new_device_country | "AU" | The country code where the device is located. |
 | new_device_region | "NSW" | The state or province where the device is located. |
 | new_device_city | "Sydney" | The city or metro area where the device is located. |
+| new_device_detection_time | “2021-08-31 17:32:38 AEST” | The time when the device is first detected. |
 
 ## Webhook Integration
 
@@ -125,7 +126,9 @@ The webhook integration enables programmatic interactions, such as integrating w
     "country": "AU",
     "region": "NSW",
     "city": "Sydney",
-    "city_lat_long": "-33.868820,151.209295"
+    "city_lat_long": "-33.868820,151.209295",
+    "detection_time": 1615819845,
+    "timezone": "sydney/australia"
   }
 }
 ```
