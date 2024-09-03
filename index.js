@@ -1,6 +1,6 @@
-const { default: axios } = require("axios");
+import axios from "axios";
 
-function AuthAlertAPI(projectId, data) {
+const AuthAlertAPI = (projectId, data) => {
     // read device_id from local storage
     var device_id = localStorage.getItem(projectId+'_device_id');
     // generate device id if not exists
@@ -14,4 +14,4 @@ function AuthAlertAPI(projectId, data) {
     return axios.post(`https://api.authalert.io/api/${projectId}`, data);
 }
 
-module.exports = AuthAlertAPI;
+export default AuthAlertAPI;
